@@ -10,6 +10,7 @@
 
 <body>
 
+  <!-- === NAVBAR === -->
   <nav class="navbar">
     <div class="left">
       <h1>DevCode</h1>
@@ -23,50 +24,109 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
+  <!-- === HOME === -->
   <header id="home">
     <h1>Devin Satria Ramadhan</h1>
     <p>Mahasiswa Sistem Informasi | Web Developer & Gamer</p>
   </header>
 
+  <!-- === ABOUT === -->
   <section id="about" class="about">
     <h2>Tentang Saya</h2>
-    <br><br>
-    <p>Halo Dunia! Perkenalkan, Aku Devin, mahasiswa Semester 5 Sistem Informasi di Universitas Mahkota Tricom Unggul. 
-    Aku suka Belajar membuat website dan tertarik dengan dunia teknologi selain itu aku juga suka bermain Mobile Legends, Salam Kenal semuanya😁👍.</p>
+    <p>
+      Halo Dunia! Perkenalkan, aku Devin, mahasiswa Semester 5 Sistem Informasi di Universitas Mahkota Tricom Unggul.
+      Aku suka belajar membuat website dan tertarik dengan dunia teknologi. Selain itu aku juga suka bermain Mobile Legends.
+      Semangatku dalam dunia digital membuatku ingin terus berkembang menjadi developer yang kreatif dan inovatif.
+    </p>
+    <br>
+    <article>
+      <h3>Visi dan Tujuan</h3>
+      <p>
+        Tujuan utamaku adalah menciptakan karya digital yang bermanfaat untuk banyak orang, 
+        serta memperluas kemampuan coding-ku agar bisa bekerja di industri game atau IT besar di masa depan.
+      </p>
+      <ul>
+        <li>Menjadi Web Developer profesional.</li>
+        <li>Menciptakan website yang interaktif dan responsif.</li>
+        <li>Terus belajar dan berbagi ilmu teknologi.</li>
+      </ul>
+    </article>
   </section>
 
+  <!-- === PROJECTS === -->
   <section id="projects" class="projects">
     <h2>Proyek Saya</h2>
     <div class="project-list">
       <div class="project">
-        <h3><a href="portofolio/kalkulator.html" target="_blank" class="project-link">Kalkulator Sederhana</h3></a>
-        <p>Website kalkulator pas belajar js dibantu sama gpt.</p>
+        <h3><a href="portofolio/kalkulator.html" target="_blank" class="project-link">Kalkulator Sederhana</a></h3>
+        <p>Website kalkulator pas belajar JS dibantu sama GPT.</p>
       </div>
       <div class="project">
-        <h3><a href="portofolio/jamjam/index.html" target="_blank" class="project-link">Jam Tema Partikel</h3></a>
-        <p>Prototype jam keren, ini dibantu ai juga.</p>
+        <h3><a href="portofolio/jamjam/index.html" target="_blank" class="project-link">Jam Tema Partikel</a></h3>
+        <p>Prototype jam keren, ini dibantu AI juga.</p>
       </div>
       <div class="project">
-        <h3><a href="portofolio/mutermusik/index.html" target="_blank" class="project-link">Website tuk muter musik</h3></a>
-        <p>Website Cantik, tapi fungsinya untuk muter lagu dari device kita.</p>
+        <h3><a href="portofolio/mutermusik/index.html" target="_blank" class="project-link">Website Tuk Muter Musik</a></h3>
+        <p>Website cantik, fungsinya untuk memutar lagu dari device kita.</p>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <h2>Kontak</h2><br>
-    <p>Email: <a href="mailto:devinsatriaramadhan765@gmail.com">devinsatriaramadhan765@gmail.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/alt_devin" target="_blank">@alt_devin</a></p>
+  <!-- === GALLERY === -->
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <p>Kumpulan foto dan video kegiatan atau proyek yang pernah saya buat.</p>
+    <div class="gallery-container">
+      <img src="images/dev1.jpg" alt="Foto Devin 1">
+      <img src="images/dev2.jpg" alt="Foto Devin 2">
+      <img src="images/project1.png" alt="Tampilan Proyek">
+      <video controls>
+        <source src="videos/demo1.mp4" type="video/mp4">
+        Browser kamu tidak mendukung video.
+      </video>
+    </div>
   </section>
 
+  <!-- === CONTACT === -->
+  <section id="contact" class="contact">
+    <h2>Kontak Saya</h2>
+    <p>Kamu bisa menghubungi saya melalui form di bawah ini atau lewat media sosial yang tertera.</p>
+
+    <form action="#" method="post" class="contact-form">
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" placeholder="Masukkan nama kamu" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Masukkan email kamu" required>
+
+      <label for="message">Pesan:</label>
+      <textarea id="message" name="message" placeholder="Tulis pesan kamu..." required></textarea>
+
+      <button type="submit">Kirim</button>
+    </form>
+
+    <div class="map">
+      <h3>Lokasi Saya</h3>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.902749307083!2d98.676!3d3.586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131bca2d2f1ff%3A0x9d75999e72d9e50e!2sMedan!5e0!3m2!1sid!2sid!4v1697850027382!5m2!1sid!2sid" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- === FOOTER === -->
   <footer>
-    <p>© 2025 Devin Satria Ramadhan. Dibuat dengan VSCode sama beberapa referensi dari gpt</p>
+    <p>© 2025 Devin Satria Ramadhan. Dibuat dengan VSCode dan inspirasi dari GPT.</p>
   </footer>
 </body>
 </html>
-
