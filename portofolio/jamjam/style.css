@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(270deg, #0f0c29, #302b63, #24243e);
+  background-size: 600% 600%;
+  animation: aurora 20s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Orbitron', sans-serif;
+}
+
+@keyframes aurora {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#clock {
+  font-size: 5rem;
+  z-index: 1;
+  color: #fff;
+  animation: neonRGB 5s infinite linear;
+  text-shadow: 0 0 20px #fff, 0 0 40px #fff;
+}
+
+@keyframes neonRGB {
+  0% { text-shadow: 0 0 10px #f0f, 0 0 40px #f0f, 0 0 80px #0ff; color: #0ff; }
+  33% { text-shadow: 0 0 10px #0ff, 0 0 40px #0ff, 0 0 80px #ff0; color: #ff0; }
+  66% { text-shadow: 0 0 10px #ff0, 0 0 40px #f0f, 0 0 80px #0ff; color: #f0f; }
+  100% { text-shadow: 0 0 10px #f0f, 0 0 40px #f0f, 0 0 80px #0ff; color: #0ff; }
+}
+
+#subtitle {
+  z-index: 1;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+  text-shadow: 0 0 5px #0ff, 0 0 15px #f0f;
+}
